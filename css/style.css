@@ -57,6 +57,9 @@ body {
 }
 footer {
     color: #c2c2c2;
+    /*font-size: 1.1rem;*/
+    text-align: center;
+    
 }
 .uppercase {
     text-transform: uppercase;
@@ -64,12 +67,25 @@ footer {
 .hide {
     display: none;
 }
-
-.menu {
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+.logo img {
+    width: 200px; 
+}
+.dropdown-title {
+    margin: 1rem;
+}
+.dropdown-menu {
     font-size: 16px;
     font-family: 'open sans', Arial, Helvetica, sans-serif;
     background-color: #fff;
 }
+
 
 
 
