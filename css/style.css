@@ -61,6 +61,16 @@ footer {
 .uppercase {
     text-transform: uppercase;
 }
+.hide {
+    display: none;
+}
+
+.menu {
+    font-size: 16px;
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
 
 
 /* ---------- media queries ---------- */
