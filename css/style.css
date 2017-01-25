@@ -57,9 +57,8 @@ body {
 }
 footer {
     color: #c2c2c2;
-    /*font-size: 1.1rem;*/
-    text-align: center;
-    
+    font-size: 1.2rem;
+    text-align: center;   
 }
 .uppercase {
     text-transform: uppercase;
@@ -72,13 +71,18 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75vh;
+    height: 90vh;
 }
-.logo img {
-    width: 200px; 
+.logo {
+    width: 285px;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .dropdown-title {
-    margin: 1rem;
+    margin: 1.4rem 0rem;
 }
 .dropdown-menu {
     font-size: 16px;
@@ -92,4 +96,36 @@ footer {
 /* ---------- media queries ---------- */
 
 /* ---------- tablet ----- */
-@media 
+@media (min-width: 600px) {
+    .nav {
+        flex-direction: row;
+    }
+    .logo {
+        width: 260px;
+        padding-right: 20px;    
+    }
+    .dropdown {
+        align-items: flex-start
+    }
+    .dropdown-title {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* ---------- desktop ----- */
+@media (min-width: 1000px) {
+    .nav {
+        justify-content: flex-start;
+    }
+    .logo {
+        padding-right: 85px;
+        padding-left: 30px;
+    }
+    footer {
+        font-size: 1.1rem;
+        text-align: left;
+        padding-left: 40px;
+    }
+}
