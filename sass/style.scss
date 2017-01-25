@@ -1,0 +1,92 @@
+// @import 'variables';
+// @import 'mixins';
+
+@import 'reset';
+@import 'fonts';
+
+
+
+/* ---------- Global ---------- */
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
+}
+footer {
+    color: #c2c2c2;
+    font-size: .5rem;
+    text-align: center;   
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.hide {
+    display: none;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.logo {
+    width: 285px;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropdown-title {
+    font-size: 1rem;
+    margin: 1.4rem 0rem;
+}
+.dropdown-menu {
+    width: 125px;
+    font-size: 1.2rem;
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
+    // font-weight: bold;
+    background-color: #fff;
+}
+
+
+
+
+/* ---------- Media Queries ---------- */
+
+/* ---------- Tablet ----- */
+@media (min-width: 600px) {
+    .nav {
+        flex-direction: row;
+    }
+    .logo {
+        width: 260px;
+        padding-right: 20px;    
+    }
+    .dropdown {
+        align-items: flex-start
+    }
+    .dropdown-title {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* ---------- Desktop ----- */
+@media (min-width: 1000px) {
+    .nav {
+        justify-content: flex-start;
+    }
+    .logo {
+        padding-right: 85px;
+        padding-left: 30px;
+    }
+    footer {
+        font-size: 1.1rem;
+        text-align: left;
+        padding-left: 40px;
+    }
+}
