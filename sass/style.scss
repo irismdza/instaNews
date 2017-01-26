@@ -5,52 +5,57 @@
 @import 'fonts';
 
 
+/* ---------- Variables ---------- */
+
+$white: #fff;
+$gray: #c2c2c2;
 
 /* ---------- Global ---------- */
 body {
     background-color: #000;
-    color: #fff;
+    color: $white;
     font-size: 16px;
     font-family: 'open sans', Arial, Helvetica, sans-serif;
-}
-footer {
-    color: #c2c2c2;
-    font-size: .5rem;
-    text-align: center;   
-}
-.uppercase {
-    text-transform: uppercase;
-}
-.hide {
+    .hide {
     display: none;
+    }
 }
+
+/* ---------- Header ---------- */
+
 .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 90vh;
-}
-.logo {
-    width: 285px;
-}
-.dropdown {
+    .dropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    }
 .dropdown-title {
-    font-size: 1rem;
-    margin: 1.4rem 0rem;
-}
+    font-size: .8rem;
+    margin: 1rem 0rem;
+    }
 .dropdown-menu {
     width: 125px;
-    font-size: 1.2rem;
-    font-family: 'open sans', Arial, Helvetica, sans-serif;
-    // font-weight: bold;
-    background-color: #fff;
+    font-size: 1.1rem;
+    background-color: $white;
+    }
 }
 
+
+/* ---------- Footer ---------- */
+
+footer {
+    color: $gray;
+    font-size: .9rem;
+    text-align: center;   
+    .uppercase {
+    text-transform: uppercase;
+    }
+}
 
 
 
@@ -62,7 +67,7 @@ footer {
         flex-direction: row;
     }
     .logo {
-        width: 260px;
+        width: 22%;
         padding-right: 20px;    
     }
     .dropdown {
@@ -70,7 +75,7 @@ footer {
     }
     .dropdown-title {
         margin-top: 0;
-        font-size: 1.2rem;
+        font-size: .9rem;
     }
 }
 
@@ -81,11 +86,14 @@ footer {
         justify-content: flex-start;
     }
     .logo {
-        padding-right: 85px;
+        width: 220px;
+        padding-right: 35px;
         padding-left: 30px;
     }
+    .dropdown-title {
+        font-size: 1rem;
+    }
     footer {
-        font-size: 1.1rem;
         text-align: left;
         padding-left: 40px;
     }

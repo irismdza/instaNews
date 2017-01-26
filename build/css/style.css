@@ -76,24 +76,17 @@ table {
   font-weight: normal;
   font-style: italic; }
 
+/* ---------- Variables ---------- */
 /* ---------- Global ---------- */
 body {
   background-color: #000;
   color: #fff;
   font-size: 16px;
   font-family: 'open sans', Arial, Helvetica, sans-serif; }
+  body .hide {
+    display: none; }
 
-footer {
-  color: #c2c2c2;
-  font-size: .5rem;
-  text-align: center; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-.hide {
-  display: none; }
-
+/* ---------- Header ---------- */
 .nav {
   display: -ms-flexbox;
   display: flex;
@@ -104,27 +97,28 @@ footer {
   -ms-flex-pack: center;
       justify-content: center;
   height: 90vh; }
+  .nav .dropdown {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+  .nav .dropdown-title {
+    font-size: .8rem;
+    margin: 1rem 0rem; }
+  .nav .dropdown-menu {
+    width: 125px;
+    font-size: 1.1rem;
+    background-color: #fff; }
 
-.logo {
-  width: 285px; }
-
-.dropdown {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.dropdown-title {
-  font-size: 1rem;
-  margin: 1.4rem 0rem; }
-
-.dropdown-menu {
-  width: 125px;
-  font-size: 1.2rem;
-  font-family: 'open sans', Arial, Helvetica, sans-serif;
-  background-color: #fff; }
+/* ---------- Footer ---------- */
+footer {
+  color: #c2c2c2;
+  font-size: .9rem;
+  text-align: center; }
+  footer .uppercase {
+    text-transform: uppercase; }
 
 /* ---------- Media Queries ---------- */
 /* ---------- Tablet ----- */
@@ -133,14 +127,14 @@ footer {
     -ms-flex-direction: row;
         flex-direction: row; }
   .logo {
-    width: 260px;
+    width: 22%;
     padding-right: 20px; }
   .dropdown {
     -ms-flex-align: start;
         align-items: flex-start; }
   .dropdown-title {
     margin-top: 0;
-    font-size: 1.2rem; } }
+    font-size: .9rem; } }
 
 /* ---------- Desktop ----- */
 @media (min-width: 1000px) {
@@ -148,9 +142,11 @@ footer {
     -ms-flex-pack: start;
         justify-content: flex-start; }
   .logo {
-    padding-right: 85px;
+    width: 220px;
+    padding-right: 35px;
     padding-left: 30px; }
+  .dropdown-title {
+    font-size: 1rem; }
   footer {
-    font-size: 1.1rem;
     text-align: left;
     padding-left: 40px; } }
