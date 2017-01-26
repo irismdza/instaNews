@@ -1,66 +1,14 @@
-// @import 'variables';
-// @import 'mixins';
-
+@import 'variables';
+@import 'mixins';
 @import 'reset';
 @import 'fonts';
-
-
-/* ---------- Variables ---------- */
-
-$white: #fff;
-$gray: #c2c2c2;
-
-/* ---------- Global ---------- */
-body {
-    background-color: #000;
-    color: $white;
-    font-size: 16px;
-    font-family: 'open sans', Arial, Helvetica, sans-serif;
-    .hide {
-    display: none;
-    }
-}
-
-/* ---------- Header ---------- */
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    .dropdown {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-.dropdown-title {
-    font-size: .8rem;
-    margin: 1rem 0rem;
-    }
-.dropdown-menu {
-    width: 125px;
-    font-size: 1.1rem;
-    background-color: $white;
-    }
-}
-
-
-/* ---------- Footer ---------- */
-
-footer {
-    color: $gray;
-    font-size: .9rem;
-    text-align: center;   
-    .uppercase {
-    text-transform: uppercase;
-    }
-}
-
+@import 'global';
+@import 'header';
+@import 'content';
+@import 'footer';
 
 
 /* ---------- Media Queries ---------- */
-
 /* ---------- Tablet ----- */
 @media (min-width: 600px) {
     .nav {

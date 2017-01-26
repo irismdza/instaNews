@@ -1,0 +1,9 @@
+/* ---------- Mixins ---------- */
+
+@mixin flex-position-column() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// @mixin media($width)

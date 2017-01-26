@@ -1,0 +1,19 @@
+/* ---------- Header ---------- */
+
+.nav {
+    @include flex-position-column();
+    justify-content: center;
+    height: 90vh;
+    .dropdown {
+    @include flex-position-column();
+    }
+    .dropdown-title {
+    font-size: .8rem;
+    margin: 1rem 0rem;
+    }
+    .dropdown-menu {
+    width: 125px;
+    font-size: 1.1rem;
+    background-color: $white;
+    }
+}
