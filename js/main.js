@@ -1,7 +1,5 @@
 $(function() {
-    // this is my message
-    // var message = 'Hello world';
-    // console.log(message);
+
     var url = "https://api.nytimes.com/svc/topstories/v2/home.json";
     url += '?' + $.param({
   'api-key': "bc19b3c20a46467681e96804ed0ee1dd"
@@ -11,23 +9,11 @@ $(function() {
             method: 'GET',
             url: url
         })
-        .done(function(data) {
-            console.log(data);
-
-/*
-
-
-
-
-
-    append.(article)
-
-
-
-*/
-        })
-        .fail(function(err) {
-            console.log('error');
-        })
-    })
+        .done(function(arrayData) {
+            var onlyResults = arrayData.results.filter(function(result) {
+                return result.multimedia.length >= 5; 
+            }).slice( 0, 12 );
+    console.log(onlyResults);
+        });
+    });
 });

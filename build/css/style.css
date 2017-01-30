@@ -88,7 +88,7 @@ body {
     display: none; }
 
 /* ---------- Header ---------- */
-.nav {
+.main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -98,17 +98,17 @@ body {
   -ms-flex-pack: center;
       justify-content: center;
   height: 90vh; }
-  .nav .dropdown {
+  .main .dropdown {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
-  .nav .dropdown-title {
+  .main .dropdown-title {
     font-size: .8rem;
     margin: 1rem 0rem; }
-  .nav .dropdown-menu {
+  .main .dropdown-menu {
     width: 125px;
     font-size: 1.1rem;
     background-color: #fff; }
