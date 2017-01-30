@@ -113,6 +113,15 @@ body {
     font-size: 1.1rem;
     background-color: #fff; }
 
+/* ---------- Content ---------- */
+.article-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .article-list img {
+    width: 100vw; }
+
 /* ---------- Footer ---------- */
 footer {
   color: #c2c2c2;
