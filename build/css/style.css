@@ -120,10 +120,8 @@ body {
   .large-header .dropdown-title {
     font-size: .8rem;
     margin: 1rem 0; }
-  .large-header .dropdown-menu {
-    width: 125px;
-    font-size: 1.1rem;
-    background-color: #fff; }
+  .large-header .selectric-dropdown-menu {
+    width: 200px; }
   .large-header img {
     max-width: 100%;
     height: 100%; }
@@ -147,14 +145,14 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
       padding-left: 15px; }
-      .large-header .logo {
-        padding-right: 15px; }
       .large-header .dropdown {
         -ms-flex-align: start;
             align-items: flex-start; }
       .large-header .dropdown-title {
         font-size: 1rem;
-        margin-top: 0; } }
+        margin-top: 0; }
+      .large-header .logo {
+        padding-right: 15px; } }
 
 .small-header {
   margin: 2rem 0;

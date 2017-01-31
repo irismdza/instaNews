@@ -10,13 +10,11 @@
     flex-direction: column;
 
     @include tablet {
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include article-grid-row;
     }
 
     @include desktop {
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include article-grid-row;
     }
 }
 

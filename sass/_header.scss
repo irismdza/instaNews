@@ -12,10 +12,8 @@
         font-size: .8rem;
         margin: 1rem 0;
     }
-    .dropdown-menu {
-        width: 125px;
-        font-size: 1.1rem;
-        background-color: $white;
+    .selectric-dropdown-menu {
+        width: 200px;
     }
     img {
         max-width: 100%;
@@ -23,14 +21,7 @@
     }
 
     @include tablet {
-        flex-direction: row;
-        .dropdown {
-            align-items: flex-start;
-        }
-        .dropdown-title {
-            font-size: 1rem;
-            margin-top: 0;
-        }
+        @include large-header-tablet-desktop();
         .logo {
             width: 23%  ;
             padding-right: 20px;    
@@ -38,18 +29,11 @@
     }
     
     @include desktop {
-        flex-direction: row;
+        @include large-header-tablet-desktop();
         justify-content: flex-start;
         padding-left: 15px;
         .logo {
             padding-right: 15px;
-        }
-        .dropdown {
-            align-items: flex-start;
-        }
-        .dropdown-title {
-            font-size: 1rem;
-            margin-top: 0;
         }
     }
 }
@@ -63,25 +47,11 @@
             width: 135px;
         }
     @include tablet {
-        justify-content: flex-start;
-        align-items: flex-start;
+        @include small-header-tablet-desktop();
         padding-left: 100px;
-        .logo {
-            height: 67px;
-        }
-        .dropdown-title {
-            margin-top: 0;
-        }
     }
     @include desktop {
-        justify-content: flex-start;
-        align-items: flex-start;
+        @include small-header-tablet-desktop();
         padding-left: 40px;
-        .logo {
-            height: 67px;
-        }
-        .dropdown-title {
-            margin-top: 0;
-        }
     }
 }
