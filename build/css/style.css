@@ -202,24 +202,8 @@ footer {
   text-align: center; }
   footer .uppercase {
     text-transform: uppercase; }
-
-/* ---------- Media Queries ---------- */
-/* ---------- Tablet ----- */
-@media (min-width: 600px) {
-  .dropdown {
-    -ms-flex-align: start;
-        align-items: flex-start; }
-  .dropdown-title {
-    margin-top: 0;
-    font-size: 50rem; } }
-
-/* ---------- Desktop ----- */
-@media (min-width: 1000px) {
-  .nav {
-    -ms-flex-pack: start;
-        justify-content: flex-start; }
-  .dropdown-title {
-    font-size: 1rem; }
-  footer {
-    text-align: left;
-    padding-left: 40px; } }
+  @media (min-width: 1000px) {
+    footer {
+      text-align: left;
+      padding-left: 40px;
+      padding-top: 0; } }

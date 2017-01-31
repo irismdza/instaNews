@@ -7,6 +7,11 @@ footer {
     font-size: .9rem;
     text-align: center;   
     .uppercase {
-    text-transform: uppercase;
+        text-transform: uppercase;
+    }
+    @include desktop {
+        text-align: left;
+        padding-left: 40px;
+        padding-top: 0;
     }
 }
