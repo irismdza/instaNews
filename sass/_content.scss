@@ -8,30 +8,32 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     @include desktop {
         flex-direction: row;
         flex-wrap: wrap;
     }
 }
 
-    .article-grid {
-        display: flex;
-        align-items: flex-end;
-        width: 100vw;
-        height: 420px;
-        background-size: cover;
-        background-position: 50%;   
-        .article-abstract {
-            width: 100%;
-            padding: .5rem;
-            background: rgba(0,0,0,.6);
-        }
- 
-        @include tablet {
-            width: 50vw;
-        }
-        
-        @include desktop {
-            width: 25vw;
-        }
+.article-grid {
+    display: flex;
+    align-items: flex-end;
+    width: 100vw;
+    height: 420px;
+    background-size: cover;
+    background-position: 50%;   
+    
+    .article-abstract {
+        width: 100%;
+        padding: .5rem;
+        background: rgba(0,0,0,.6);
     }
+
+    @include tablet {
+        width: 50vw;
+    }
+    
+    @include desktop {
+        width: 25vw;
+    }
+}

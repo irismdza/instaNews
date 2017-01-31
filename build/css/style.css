@@ -116,7 +116,7 @@ body {
         align-items: center; }
   .large-header .dropdown-title {
     font-size: .8rem;
-    margin: 1rem 0rem; }
+    margin: 1rem 0; }
   .large-header .dropdown-menu {
     width: 125px;
     font-size: 1.1rem;
@@ -131,9 +131,27 @@ body {
       .large-header .dropdown {
         -ms-flex-align: start;
             align-items: flex-start; }
+      .large-header .dropdown-title {
+        font-size: 1rem;
+        margin-top: 0; }
       .large-header .logo {
-        width: 160px;
+        width: 23%;
         padding-right: 20px; } }
+  @media (min-width: 1000px) {
+    .large-header {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      padding-left: 30px; }
+      .large-header .logo {
+        padding-right: 50px; }
+      .large-header .dropdown {
+        -ms-flex-align: start;
+            align-items: flex-start; }
+      .large-header .dropdown-title {
+        font-size: 1rem;
+        margin-top: 0; } }
 
 .small-header {
   margin: 2rem 0;
