@@ -9,12 +9,16 @@ body {
         width: 100%;
         max-width: 1600px;
     }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
     a {
         color: $white;
         text-decoration: none;
         line-height: 1.5rem;
     }
-    .hide {
-    display: none;
+    .hide-h1 {
+        display: none;
     }
 }

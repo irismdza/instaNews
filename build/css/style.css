@@ -88,11 +88,14 @@ body {
     margin: 0 auto;
     width: 100%;
     max-width: 1600px; }
+  body img {
+    max-width: 100%;
+    height: auto; }
   body a {
     color: #fff;
     text-decoration: none;
     line-height: 1.5rem; }
-  body .hide {
+  body .hide-h1 {
     display: none; }
 
 /* ---------- Header ---------- */
@@ -184,6 +187,11 @@ body {
         margin-top: 0; } }
 
 /* ---------- Content ---------- */
+.loader {
+  display: none;
+  width: 50px;
+  margin: 0 auto; }
+
 .article-list {
   display: -ms-flexbox;
   display: flex;
@@ -234,5 +242,4 @@ footer {
   @media (min-width: 1000px) {
     footer {
       text-align: left;
-      padding-left: 40px;
-      padding-top: 0; } }
+      padding-left: 40px; } }
