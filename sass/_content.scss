@@ -3,14 +3,20 @@
 .article-list {
     display: flex;
     flex-direction: column;
-    img {
-        width: 100vw;
+    ul {
+        margin: 0;
+        padding: 0;
     }
+    p {
+vertical-align: text-bottom;
+    }
+
     @include tablet {
-    flex-direction: row;
-    flex-wrap: wrap;
-        img {
-            width: 50vw;
-        }
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include desktop {
+
     }
 }

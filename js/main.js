@@ -14,11 +14,12 @@ $(function() {
                 return result.multimedia.length >= 5; 
             }).slice(0, 12);
             $.each(filteredData, function(key, value) {
+                var imageUrl = value.multimedia[4].url;
                 articleList += '<li>';
-                articleList += '<div><a href="' + value.url + '">';
-                articleList += '<img src="' + value.multimedia[4].url + '" />';
-                articleList += '<p>' + value.abstract + '</p>';
-                articleList += '</a></div></li>';
+                articleList += '<a href="' + value.url + '">';
+                articleList += '<div class="container" style="background-image:url(' + imageUrl + ')">'
+                articleList += '<p class="gradient">' + value.abstract + '</p>';
+                articleList += '</div></a></li>';
             });
         $('.article-list').append(articleList);
         });

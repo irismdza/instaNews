@@ -7,8 +7,27 @@ body {
     a {
         color: $white;
         text-decoration: none;
+        line-height: 1.5rem;
     }
     .hide {
     display: none;
+    }
+    .container {
+        display: flex;
+        align-items: flex-end;
+        width: 100vw;
+        height: 420px;
+        background: no-repeat center top contain;
+        background-size: auto 420px;
+        p {
+            padding: .5rem;
+        }
+ 
+        @include tablet {
+            width: 50vw;
+        }
+        @include desktop {
+            width: 25vw;
+        }
     }
 }
