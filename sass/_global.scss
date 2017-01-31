@@ -12,14 +12,14 @@ body {
     .hide {
     display: none;
     }
-    .container {
+    .article-grid {
         display: flex;
         align-items: flex-end;
         width: 100vw;
         height: 420px;
         background-size: cover;
         background-position: 50%;   
-        p {
+        .article-abstract {
             width: 100%;
             padding: .5rem;
             background: rgba(0,0,0,.6);

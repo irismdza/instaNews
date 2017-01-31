@@ -90,7 +90,7 @@ body {
     line-height: 1.5rem; }
   body .hide {
     display: none; }
-  body .container {
+  body .article-grid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: end;
@@ -99,15 +99,15 @@ body {
     height: 420px;
     background-size: cover;
     background-position: 50%; }
-    body .container p {
+    body .article-grid .article-abstract {
       width: 100%;
       padding: .5rem;
       background: rgba(0, 0, 0, 0.6); }
     @media (min-width: 600px) and (max-width: 999px) {
-      body .container {
+      body .article-grid {
         width: 50vw; } }
     @media (min-width: 1000px) {
-      body .container {
+      body .article-grid {
         width: 25vw; } }
 
 /* ---------- Header ---------- */

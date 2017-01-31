@@ -8,27 +8,32 @@
 </head>
 <body>
     <h1 class="hide">instaNews</h1>
-    <header class="main">
-        <img class="logo" src="images/nyt-logo.svg" />
-        <div class="dropdown">
-            <p class="dropdown-title">Choose a section:</p>
-            <select class="dropdown-menu" name="sections">
-                <option selected>Sections ...</option> 
-                <option value="home">Home</option>
-                <option value="science">Science</option>
-                <option value="business">Business</option>
-                <option value="sports">Sports</option>
-                <option value="technology">Technology</option>
-                <option value="fashion">Fashion</option>
-            </select>
-            <ul class="article-list"></ul>
-        </div>
-    </header>
+    
+    <div class="container">
+        
+        <header class="main">
+            <img class="logo" src="images/nyt-logo.svg" />
+            <div class="dropdown">
+                <p class="dropdown-title">Choose a section:</p>
+                <select class="dropdown-menu" name="sections">
+                    <option selected>Sections ...</option> 
+                    <option value="home">Home</option>
+                    <option value="science">Science</option>
+                    <option value="business">Business</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+            </div>
+        </header>
 
-    <footer>
-        <p>&copy; Copyright 2016 <span class="uppercase">Instanews</span>
-        </p>
-    </footer>
+        <ul class="article-list"></ul>
+
+        <footer>
+            <p>&copy; Copyright 2016 <span class="uppercase">Instanews</span>
+            </p>
+        </footer>
+    </div>
 
     <script src="lib/jquery-3.1.1.min.js"></script>
     <script src="build/js/main.min.js"></script>
