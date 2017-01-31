@@ -84,6 +84,9 @@ body {
   color: #fff;
   font-size: 16px;
   font-family: 'open sans', Arial, Helvetica, sans-serif; }
+  body a {
+    color: #fff;
+    text-decoration: none; }
   body .hide {
     display: none; }
 
@@ -121,6 +124,14 @@ body {
       flex-direction: column; }
   .article-list img {
     width: 100vw; }
+  @media (min-width: 600px) and (max-width: 999px) {
+    .article-list {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .article-list img {
+        width: 50vw; } }
 
 /* ---------- Footer ---------- */
 footer {

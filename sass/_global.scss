@@ -4,6 +4,10 @@ body {
     color: $white;
     font-size: 16px;
     font-family: 'open sans', Arial, Helvetica, sans-serif;
+    a {
+        color: $white;
+        text-decoration: none;
+    }
     .hide {
     display: none;
     }

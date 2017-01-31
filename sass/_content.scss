@@ -6,4 +6,11 @@
     img {
         width: 100vw;
     }
+    @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+        img {
+            width: 50vw;
+        }
+    }
 }

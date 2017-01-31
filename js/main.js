@@ -15,12 +15,12 @@ $(function() {
             }).slice(0, 12);
             $.each(filteredData, function(key, value) {
                 articleList += '<li>';
-                articleList += '<a href="' + value.url + '">';
+                articleList += '<div><a href="' + value.url + '">';
                 articleList += '<img src="' + value.multimedia[4].url + '" />';
                 articleList += '<p>' + value.abstract + '</p>';
-                articleList += '</a></li>';
+                articleList += '</a></div></li>';
             });
-         $('.article-list').append(articleList);
+        $('.article-list').append(articleList);
+        });
     });
-});
 });
