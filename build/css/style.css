@@ -143,9 +143,9 @@ body {
           flex-direction: row;
       -ms-flex-pack: start;
           justify-content: flex-start;
-      padding-left: 30px; }
+      padding-left: 15px; }
       .large-header .logo {
-        padding-right: 50px; }
+        padding-right: 15px; }
       .large-header .dropdown {
         -ms-flex-align: start;
             align-items: flex-start; }
@@ -167,6 +167,17 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
       padding-left: 100px; }
+      .small-header .logo {
+        height: 67px; }
+      .small-header .dropdown-title {
+        margin-top: 0; } }
+  @media (min-width: 1000px) {
+    .small-header {
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      padding-left: 40px; }
       .small-header .logo {
         height: 67px; }
       .small-header .dropdown-title {
