@@ -3,6 +3,8 @@ $(function() {
         var $articleList = $('.article-list');
         $articleList.empty();
 
+        $('.large-header').addClass('small-header');
+
         var $section = $('.dropdown-menu').val();
         var url = 'https://api.nytimes.com/svc/topstories/v2/' + $section + '.json';
         url += '?' + $.param({ 'api-key': 'bc19b3c20a46467681e96804ed0ee1dd'

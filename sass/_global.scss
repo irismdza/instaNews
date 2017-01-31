@@ -4,6 +4,11 @@ body {
     color: $white;
     font-size: 16px;
     font-family: 'open sans', Arial, Helvetica, sans-serif;
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1600px;
+    }
     a {
         color: $white;
         text-decoration: none;
@@ -11,25 +16,5 @@ body {
     }
     .hide {
     display: none;
-    }
-    .article-grid {
-        display: flex;
-        align-items: flex-end;
-        width: 100vw;
-        height: 420px;
-        background-size: cover;
-        background-position: 50%;   
-        .article-abstract {
-            width: 100%;
-            padding: .5rem;
-            background: rgba(0,0,0,.6);
-        }
- 
-        @include tablet {
-            width: 50vw;
-        }
-        @include desktop {
-            width: 25vw;
-        }
     }
 }

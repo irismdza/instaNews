@@ -11,19 +11,13 @@
 /* ---------- Media Queries ---------- */
 /* ---------- Tablet ----- */
 @media (min-width: 600px) {
-    .nav {
-        flex-direction: row;
-    }
-    .logo {
-        width: 22%;
-        padding-right: 20px;    
-    }
+
     .dropdown {
         align-items: flex-start
     }
     .dropdown-title {
         margin-top: 0;
-        font-size: .9rem;
+        font-size: 50rem;
     }
 }
 
@@ -33,11 +27,11 @@
     .nav {
         justify-content: flex-start;
     }
-    .logo {
-        width: 220px;
-        padding-right: 35px;
-        padding-left: 30px;
-    }
+    // .logo {
+    //     width: 220px;
+    //     padding-right: 35px;
+    //     padding-left: 30px;
+    // }
     .dropdown-title {
         font-size: 1rem;
     }
