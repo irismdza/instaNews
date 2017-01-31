@@ -100,7 +100,8 @@ body {
     background: no-repeat center top contain;
     background-size: auto 420px; }
     body .container p {
-      padding: .5rem; }
+      padding: .5rem;
+      background: rgba(0, 0, 0, 0.6); }
     @media (min-width: 600px) and (max-width: 999px) {
       body .container {
         width: 50vw; } }

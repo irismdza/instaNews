@@ -21,6 +21,7 @@ body {
         background-size: auto 420px;
         p {
             padding: .5rem;
+            background: rgba(0,0,0,.6);
         }
  
         @include tablet {
