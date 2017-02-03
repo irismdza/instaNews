@@ -44,7 +44,7 @@
     width: 100%;
         .logo {
             height: 150px;
-            width: 135px;
+            width: 150px;
         }
     @include tablet {
         @include small-header-tablet-desktop();
