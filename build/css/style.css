@@ -74,7 +74,7 @@ body {
     color: #fff;
     text-decoration: none;
     line-height: 1.5rem; }
-  body .hide-h1 {
+  body .screen-reader {
     display: none; }
 
 /* ---------- Header ---------- */
@@ -139,7 +139,7 @@ body {
   width: 100%; }
   .small-header .logo {
     height: 150px;
-    width: 135px; }
+    width: 150px; }
   @media (min-width: 600px) and (max-width: 999px) {
     .small-header {
       -ms-flex-pack: start;
